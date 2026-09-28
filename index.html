@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Bangladesh</title>
+  <meta name="description" content="A travel guide to Bangladesh: top destinations, sample itineraries, best time to visit, travel tips and food to try.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top">Discover<span>Bangladesh</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#itineraries">Itineraries</a></li>
+        <li><a href="#seasons">When to go</a></li>
+        <li><a href="#tips">Travel tips</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#contact" class="nav-cta">Plan a trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg" style="--img:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Nilgiri%2C_Bandarban%2C_Bangladesh.jpg/1280px-Nilgiri%2C_Bandarban%2C_Bangladesh.jpg')"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">South Asia's best-kept secret</p>
+        <h1>Rivers, mangroves, tea hills and the world's longest beach</h1>
+        <p class="lead">Bangladesh is a land of green deltas, ancient ruins and warm hospitality. Here is everything you need to plan your first visit.</p>
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">Explore destinations</a>
+          <a href="#itineraries" class="btn btn-ghost">Plan your trip</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Bangladesh -->
+    <section class="section" id="why">
+      <div class="container">
+        <h2 class="section-title">Why visit Bangladesh</h2>
+        <div class="grid grid-4">
+          <article class="feature">
+            <h3>Wild nature</h3>
+            <p>Sail into the Sundarbans, the largest mangrove forest in the world and home to the Royal Bengal tiger.</p>
+          </article>
+          <article class="feature">
+            <h3>Deep history</h3>
+            <p>Walk through Buddhist monasteries, Mughal forts and a 15th-century mosque city, some of them on the UNESCO list.</p>
+          </article>
+          <article class="feature">
+            <h3>Rich food</h3>
+            <p>From smoky Old Dhaka biryani to fresh hilsa curry and winter pitha, every region has its own flavors.</p>
+          </article>
+          <article class="feature">
+            <h3>Warm people</h3>
+            <p>Visitors are still rare, so expect curious smiles, cups of tea and plenty of invitations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="section section-alt" id="destinations">
+      <div class="container">
+        <h2 class="section-title">Top destinations</h2>
+        <p class="section-sub">Filter by the kind of trip you're after.</p>
+        <div class="filters" role="toolbar" aria-label="Filter destinations">
+          <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="beach" aria-pressed="false">Beaches</button>
+          <button class="filter" data-filter="nature" aria-pressed="false">Nature</button>
+          <button class="filter" data-filter="hills" aria-pressed="false">Hills</button>
+          <button class="filter" data-filter="heritage" aria-pressed="false">Heritage</button>
+          <button class="filter" data-filter="city" aria-pressed="false">Cities</button>
+        </div>
+
+        <div class="grid grid-3 dest-grid">
+          <article class="card" data-cat="beach">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Cox%27s_Bazar_sea_beach_01.jpg/1280px-Cox%27s_Bazar_sea_beach_01.jpg" alt="Waves on Cox's Bazar sea beach">
+            <div class="card-body">
+              <span class="tag">Beach</span>
+              <h3>Cox's Bazar</h3>
+              <p>An unbroken stretch of sand along the Bay of Bengal, often called the world's longest natural sea beach. Take a day trip along the Marine Drive to Inani and Himchari.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="beach">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Saint_Martin%27s_Island.JPG/1280px-Saint_Martin%27s_Island.JPG" alt="Coconut palms and clear water on Saint Martin's Island">
+            <div class="card-body">
+              <span class="tag">Beach</span>
+              <h3>Saint Martin's Island</h3>
+              <p>The country's only coral island, with coconut palms and clear water. Visitor numbers and seasons are regulated to protect the reef, so check the current rules before you go.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nature">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/River_Along_Mangroves.jpg/1280px-River_Along_Mangroves.jpg" alt="A river winding through dense mangrove forest">
+            <div class="card-body">
+              <span class="tag">Nature · UNESCO</span>
+              <h3>The Sundarbans</h3>
+              <p>The world's largest mangrove forest and a UNESCO World Heritage Site. Multi-day boat trips from Khulna or Mongla pass through creeks where you may spot deer, crocodiles and kingfishers.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nature">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ratargul_0276.jpg/1280px-Ratargul_0276.jpg" alt="Boat among flooded trees at Ratargul swamp forest">
+            <div class="card-body">
+              <span class="tag">Nature</span>
+              <h3>Sylhet &amp; Ratargul</h3>
+              <p>Paddle a wooden boat through the flooded Ratargul swamp forest, then head to Jaflong, where clear rivers flow down from the Khasi hills.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nature hills">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tea_Garden_near_Srimangal%2C_Sylhet%2C_Bangladesh.jpg/1280px-Tea_Garden_near_Srimangal%2C_Sylhet%2C_Bangladesh.jpg" alt="Rows of tea bushes near Srimangal">
+            <div class="card-body">
+              <span class="tag">Nature · Hills</span>
+              <h3>Srimangal</h3>
+              <p>The tea capital of Bangladesh. Walk through rolling estates, look for gibbons in Lawachara National Park, and try the famous layered "seven-color" tea.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="hills">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nilgiri%2C_Bandarban%2C_Bangladesh_3.jpg/1280px-Nilgiri%2C_Bandarban%2C_Bangladesh_3.jpg" alt="Clouds over the hills at Nilgiri, Bandarban">
+            <div class="card-body">
+              <span class="tag">Hills</span>
+              <h3>Bandarban</h3>
+              <p>Misty ridges, waterfalls and indigenous villages in the Chittagong Hill Tracts. Watch the sunrise above the clouds at Nilgiri. Some areas need permits.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="hills nature">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hanging_Bridge%2C_Kaptai_Lake.jpg/1280px-Hanging_Bridge%2C_Kaptai_Lake.jpg" alt="Hanging bridge over Kaptai Lake in Rangamati">
+            <div class="card-body">
+              <span class="tag">Hills · Nature</span>
+              <h3>Rangamati</h3>
+              <p>Take a boat across the turquoise arms of Kaptai Lake, cross the hanging bridge and browse handwoven textiles from the local communities.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="city heritage">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ahsan_Manzil-Front_View.jpg/1280px-Ahsan_Manzil-Front_View.jpg" alt="The pink facade of Ahsan Manzil in Old Dhaka">
+            <div class="card-body">
+              <span class="tag">City · Heritage</span>
+              <h3>Old Dhaka</h3>
+              <p>Ride a rickshaw through lanes full of noise and color to the pink Ahsan Manzil palace, Lalbagh Fort and the busy Sadarghat river port.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="heritage">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Aerial_view_of_Somapura_Mahavihara.jpg/1280px-Aerial_view_of_Somapura_Mahavihara.jpg" alt="Aerial view of the Somapura Mahavihara ruins at Paharpur">
+            <div class="card-body">
+              <span class="tag">Heritage · UNESCO</span>
+              <h3>Paharpur</h3>
+              <p>The ruins of Somapura Mahavihara, a vast 8th-century Buddhist monastery that was once one of the great centers of learning in South Asia.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="heritage">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Sixty_Dome_Mosque_at_Bagerhat_%287%29.jpg/1280px-Sixty_Dome_Mosque_at_Bagerhat_%287%29.jpg" alt="The Sixty Dome Mosque in Bagerhat">
+            <div class="card-body">
+              <span class="tag">Heritage · UNESCO</span>
+              <h3>Bagerhat Mosque City</h3>
+              <p>A 15th-century city founded by Khan Jahan Ali. Its centerpiece is the brick Shat Gombuj (Sixty Dome) Mosque. It pairs well with a Sundarbans trip.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="heritage">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/View_of_Mahasthangarh.jpg/1280px-View_of_Mahasthangarh.jpg" alt="Ruins and greenery at Mahasthangarh">
+            <div class="card-body">
+              <span class="tag">Heritage</span>
+              <h3>Mahasthangarh</h3>
+              <p>Near Bogura, the remains of ancient Pundranagara, one of the oldest urban archaeological sites in Bangladesh.</p>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nature">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jaflong_Sylhet.jpg/1280px-Jaflong_Sylhet.jpg" alt="River and hills at Jaflong">
+            <div class="card-body">
+              <span class="tag">Nature</span>
+              <h3>Jaflong</h3>
+              <p>Stony riverbeds and clear water right at the foot of the hills on the Indian border. Easy to visit as a day trip from Sylhet city.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itineraries -->
+    <section class="section" id="itineraries">
+      <div class="container">
+        <h2 class="section-title">Sample itineraries</h2>
+        <p class="section-sub">Starting points you can adjust. Domestic flights save a lot of time on long legs.</p>
+        <div class="grid grid-3">
+          <article class="itinerary">
+            <p class="days">5 days</p>
+            <h3>Green North-East</h3>
+            <ol>
+              <li><strong>Day 1</strong> Dhaka: Old Dhaka by rickshaw</li>
+              <li><strong>Day 2</strong> Fly or take the train to Sylhet; visit the shrines</li>
+              <li><strong>Day 3</strong> Ratargul swamp forest and Jaflong</li>
+              <li><strong>Day 4</strong> Srimangal tea estates and Lawachara</li>
+              <li><strong>Day 5</strong> Back to Dhaka</li>
+            </ol>
+          </article>
+          <article class="itinerary featured">
+            <p class="days">7 days</p>
+            <h3>Classic Bangladesh</h3>
+            <ol>
+              <li><strong>Day 1</strong> Dhaka highlights</li>
+              <li><strong>Day 2–4</strong> Sundarbans boat trip from Khulna, with Bagerhat</li>
+              <li><strong>Day 5</strong> Fly to Cox's Bazar</li>
+              <li><strong>Day 6</strong> Marine Drive, Inani and Himchari</li>
+              <li><strong>Day 7</strong> Fly back to Dhaka</li>
+            </ol>
+          </article>
+          <article class="itinerary">
+            <p class="days">10 days</p>
+            <h3>The Complete Loop</h3>
+            <ol>
+              <li><strong>Day 1–2</strong> Dhaka, with a day trip to Sonargaon</li>
+              <li><strong>Day 3–5</strong> Sundarbans and Bagerhat</li>
+              <li><strong>Day 6–7</strong> Bandarban hills</li>
+              <li><strong>Day 8–9</strong> Cox's Bazar</li>
+              <li><strong>Day 10</strong> Fly back to Dhaka</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasons -->
+    <section class="section section-alt" id="seasons">
+      <div class="container">
+        <h2 class="section-title">Best time to visit</h2>
+        <div class="table-wrap">
+          <table class="seasons">
+            <thead>
+              <tr><th scope="col">Season</th><th scope="col">Months</th><th scope="col">What to expect</th><th scope="col">Good for</th></tr>
+            </thead>
+            <tbody>
+              <tr class="best"><td>Winter (dry)</td><td>Nov – Feb</td><td>Cool, dry and sunny. The peak travel season.</td><td>Everything, especially beaches, the Sundarbans and the hills</td></tr>
+              <tr><td>Pre-monsoon</td><td>Mar – May</td><td>Hot and humid, with occasional storms</td><td>Mango season, and fewer crowds</td></tr>
+              <tr><td>Monsoon</td><td>Jun – Sep</td><td>Heavy rain and some flooding. Travel can be slow.</td><td>Ratargul and the lush green landscapes</td></tr>
+              <tr><td>Post-monsoon</td><td>Oct</td><td>Rain easing, with green fields everywhere</td><td>Sylhet, tea estates and river trips</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="section" id="tips">
+      <div class="container">
+        <h2 class="section-title">Travel tips</h2>
+        <div class="grid grid-3">
+          <article class="tip">
+            <h3>Visa</h3>
+            <p>Many nationalities can get a visa on arrival, but it depends on your passport and the rules change. Check the official portal <a href="https://www.visa.gov.bd/" target="_blank" rel="noopener">visa.gov.bd</a> or your nearest Bangladesh embassy before you travel.</p>
+          </article>
+          <article class="tip">
+            <h3>Money</h3>
+            <p>The currency is the Bangladeshi taka (BDT). ATMs are common in cities but rare in rural areas, so carry cash when you head out of town. Mobile wallets like bKash are widely used.</p>
+          </article>
+          <article class="tip">
+            <h3>Getting around</h3>
+            <p>Domestic flights link Dhaka with Sylhet, Chattogram, Cox's Bazar and Jashore. Trains are comfortable and scenic. River launches are a classic experience, and rickshaws are best for short trips.</p>
+          </article>
+          <article class="tip">
+            <h3>Dress &amp; etiquette</h3>
+            <p>Bangladesh is a conservative, mostly Muslim country. Cover your shoulders and knees, take off your shoes at mosques and homes, and use your right hand to eat and to pass things.</p>
+          </article>
+          <article class="tip">
+            <h3>Stay connected</h3>
+            <p>Local SIM cards are cheap and easy to buy with your passport. Grameenphone and Robi have wide coverage.</p>
+          </article>
+          <article class="tip">
+            <h3>Safety</h3>
+            <p>Check your government's travel advisory before you go, especially for the Chittagong Hill Tracts, where permits may be required. Traffic is intense, so take care when crossing roads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food -->
+    <section class="section section-alt" id="food">
+      <div class="container">
+        <h2 class="section-title">Food to try</h2>
+        <ul class="food-list">
+          <li><h3>Kacchi biryani</h3><p>Slow-cooked rice and mutton, an Old Dhaka classic.</p></li>
+          <li><h3>Ilish (hilsa)</h3><p>The national fish, often cooked in mustard sauce.</p></li>
+          <li><h3>Fuchka</h3><p>Crisp shells filled with spiced tamarind water. The favorite street snack.</p></li>
+          <li><h3>Pitha</h3><p>Rice cakes, both sweet and savory, especially in winter.</p></li>
+          <li><h3>Bhorta</h3><p>Mashed vegetables, fish or lentils with mustard oil and chili.</p></li>
+          <li><h3>Mishti doi</h3><p>Sweet, caramelized yogurt served in clay pots.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2 class="section-title">Plan your trip</h2>
+          <p class="section-sub">Tell us when you'd like to travel and what interests you, and we'll send back ideas.</p>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>Name <input type="text" name="name" required autocomplete="name"></label>
+          <label>Email <input type="email" name="email" required autocomplete="email"></label>
+          <label>Travel month
+            <select name="month">
+              <option>Not sure yet</option>
+              <option>November</option><option>December</option><option>January</option><option>February</option>
+              <option>March</option><option>Other</option>
+            </select>
+          </label>
+          <label>What interests you? <textarea name="message" rows="4"></textarea></label>
+          <button type="submit" class="btn btn-primary">Send</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="brand">Discover<span>Bangladesh</span></p>
+      <p class="small">Travel information changes, so please confirm visa, permit and safety details with official sources before your trip.</p>
+      <details class="credits">
+        <summary>Photo credits</summary>
+        <p class="small">All photos are from Wikimedia Commons: Nilgiri (Tanvir Rahat, CC BY-SA 4.0); Cox's Bazar (Tanweer Morshed, CC BY-SA 3.0); Saint Martin's Island (Niaz Morshed Shovon, public domain); Sundarbans (Amdadphoto, CC BY-SA 4.0); Ratargul (Abdulmominbd, CC BY-SA 4.0); Srimangal (Xahidur Reza, CC BY 2.0); Kaptai Lake (Shakhawat Hossen Shafat, CC BY-SA 4.0); Ahsan Manzil (Mahbub Hossain Shaheed, CC BY-SA 4.0); Somapura Mahavihara (Md. Ahsanul Haque Nayem, CC BY-SA 4.0); Sixty Dome Mosque (Anup Sadi, CC BY-SA 4.0); Mahasthangarh (Zaheed Sarwer Khan, CC BY 4.0); Jaflong (Abdul Momin, CC BY-SA 4.0).</p>
+      </details>
+      <p class="small">&copy; 2026 Discover Bangladesh</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
